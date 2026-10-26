@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Stanford Cleaning Services — professional, friendly home cleaning. Clean spaces, healthy lives.">
+<title>Stanford Cleaning Services | Clean Spaces, Healthy Lives</title>
+<style>
+:root{--navy:#073b7a;--blue:#087bd4;--green:#28a745;--lime:#b8f13a;--ink:#17304e;--muted:#5c6e82;--pale:#f3f9ff;--white:#fff;--shadow:0 18px 45px rgba(7,59,122,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);line-height:1.6;background:#fff}a{color:inherit}img{max-width:100%;display:block}.wrap{width:min(1160px,92%);margin:auto}
+.topbar{background:var(--navy);color:white;font-size:.9rem;padding:8px 0}.topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid #e5eef7}
+.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none}.brandmark{width:52px;height:52px;border-radius:16px;background:linear-gradient(145deg,var(--blue),var(--navy));display:grid;place-items:center;color:white;font-size:27px;box-shadow:0 8px 20px #087bd433}.brand strong{display:block;font-size:1.15rem;line-height:1.15;color:var(--navy);letter-spacing:.02em}.brand small{color:var(--green);font-weight:800;letter-spacing:.12em;font-size:.7rem}.navlinks{display:flex;align-items:center;gap:23px}.navlinks a{text-decoration:none;font-weight:700;font-size:.92rem}.navlinks a:hover{color:var(--green)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 20px;border-radius:999px;text-decoration:none;font-weight:800;border:0;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px)}.btn-primary{color:#fff;background:linear-gradient(100deg,var(--blue),var(--navy));box-shadow:0 10px 20px #087bd42b}.btn-green{background:var(--green);color:#fff}
+.hero{position:relative;overflow:hidden;background:linear-gradient(115deg,#eff8ff 0%,#fff 52%,#effbf0 100%);padding:72px 0 64px}.hero:after{content:"";position:absolute;width:430px;height:430px;border-radius:50%;background:#b8f13a33;right:-160px;top:-170px}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;position:relative;z-index:1}.eyebrow{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:7px 13px;background:#e0f5e5;color:#187c34;font-weight:800;font-size:.83rem;letter-spacing:.04em}.hero h1{font-size:clamp(2.5rem,5vw,4.5rem);line-height:1.02;letter-spacing:-.045em;color:var(--navy);margin:20px 0}.hero h1 span{color:var(--green)}.hero p{font-size:1.12rem;color:var(--muted);max-width:560px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0}.trustline{display:flex;gap:18px;flex-wrap:wrap;color:var(--navy);font-weight:750;font-size:.9rem}.trustline span:before{content:"✓";color:var(--green);font-weight:900;margin-right:7px}.hero-photo{position:relative}.hero-photo img{height:450px;width:100%;object-fit:cover;border-radius:30px 30px 90px 30px;box-shadow:var(--shadow)}.floating-card{position:absolute;left:-25px;bottom:24px;background:white;border-radius:18px;padding:16px 20px;box-shadow:var(--shadow);max-width:230px}.floating-card strong{display:block;color:var(--navy);font-size:1.1rem}.floating-card span{color:var(--muted);font-size:.9rem}
+section{padding:76px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 38px}.section-head .eyebrow{margin-bottom:12px}.section-head h2{font-size:clamp(2rem,3.7vw,3rem);line-height:1.1;color:var(--navy);margin:0 0 14px;letter-spacing:-.035em}.section-head p{color:var(--muted);margin:0;font-size:1.03rem}
+.services{background:var(--pale)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.service-card{background:white;border:1px solid #e2edf7;border-radius:22px;padding:26px;box-shadow:0 10px 28px #073b7a08}.service-icon{height:54px;width:54px;border-radius:17px;display:grid;place-items:center;background:#e5f5e9;font-size:26px}.service-card h3{color:var(--navy);margin:16px 0 7px;font-size:1.22rem}.service-card p{color:var(--muted);margin:0}
+.pricing-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.price-card{border:1px solid #dcebf7;border-radius:22px;padding:24px 18px;text-align:center;background:white;box-shadow:0 10px 25px #073b7a08}.price-card:nth-child(even){border-color:#b9e7c3}.price-card h3{font-size:1rem;color:var(--navy);margin:0 0 9px}.price{font-size:2.15rem;font-weight:900;letter-spacing:-.04em;color:var(--blue);margin:5px 0}.price-card p{font-size:.9rem;color:var(--muted);margin:0}.price-note{text-align:center;color:var(--muted);font-size:.88rem;margin-top:20px}
+.gallery{background:linear-gradient(180deg,#f5faff,#fff)}.gallery-tools{display:flex;justify-content:center;margin:0 0 26px}.upload-label{cursor:pointer}.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.gallery-item{position:relative;overflow:hidden;border-radius:20px;background:#e8f1f9;min-height:240px;box-shadow:0 10px 24px #073b7a10}.gallery-item img{width:100%;height:280px;object-fit:cover;transition:transform .35s}.gallery-item:hover img{transform:scale(1.04)}.gallery-caption{position:absolute;bottom:0;left:0;right:0;color:#fff;padding:36px 18px 17px;background:linear-gradient(transparent,#061f40d9);font-weight:800}.gallery-item.user-added{outline:3px solid var(--green)}
+.testimonials{background:var(--navy);color:#fff}.testimonials .section-head h2{color:#fff}.testimonials .section-head p{color:#d4e4f6}.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.review{background:#ffffff0e;border:1px solid #ffffff2c;border-radius:20px;padding:25px}.stars{color:var(--lime);letter-spacing:3px}.review blockquote{margin:12px 0;color:#edf5ff}.review strong{display:block}.review small{color:#c4d8ed}.review-note{text-align:center;color:#c4d8ed;font-size:.87rem;margin-top:24px}
+.contact{background:var(--pale)}.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:32px;align-items:start}.contact-panel{background:linear-gradient(145deg,var(--navy),#0757a5);color:white;border-radius:26px;padding:30px;box-shadow:var(--shadow)}.contact-panel h3{font-size:1.6rem;margin:0 0 8px}.contact-panel p{color:#d6e8fb}.contact-line{display:flex;gap:12px;align-items:flex-start;margin:18px 0}.contact-line .ico{font-size:1.25rem}.contact-line a{color:#fff;text-decoration:none;overflow-wrap:anywhere}.contact-form{background:white;padding:30px;border-radius:26px;border:1px solid #e0ebf5;box-shadow:var(--shadow)}.contact-form h3{margin:0 0 6px;color:var(--navy);font-size:1.55rem}.contact-form>p{margin:0 0 22px;color:var(--muted)}.field{margin-bottom:17px}.field label{display:block;font-weight:800;font-size:.92rem;margin-bottom:7px;color:var(--navy)}.field input,.field textarea,.field select{width:100%;font:inherit;border:1px solid #cad9e8;border-radius:12px;padding:13px 14px;background:#fbfdff;color:var(--ink)}.field input:focus,.field textarea:focus,.field select:focus{outline:3px solid #087bd426;border-color:var(--blue)}.field textarea{min-height:135px;resize:vertical}.form-help{font-size:.83rem;color:var(--muted);margin:12px 0 0}.form-status{font-weight:700;color:var(--green);margin-top:12px;display:none}
+footer{background:#052a57;color:#d7e6f6;padding:28px 0}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.footer-inner strong{color:white}.footer-links{display:flex;gap:18px;flex-wrap:wrap}.footer-links a{text-decoration:none}
+@media(max-width:900px){.navlinks{gap:12px}.navlinks a:not(.btn){display:none}.hero-grid,.contact-grid{grid-template-columns:1fr}.hero{padding:52px 0}.hero-photo img{height:360px}.floating-card{left:12px}.cards{grid-template-columns:repeat(2,1fr)}.pricing-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.topbar .wrap{justify-content:center;text-align:center}.nav{min-height:70px}.brand strong{font-size:1rem}.brandmark{width:44px;height:44px}.navlinks .btn{padding:10px 13px;font-size:.83rem}.hero h1{font-size:2.65rem}.hero-photo img{height:290px}.cards,.gallery-grid,.review-grid{grid-template-columns:1fr}.gallery-item img{height:250px}.pricing-grid{gap:10px}.price-card{padding:20px 10px}.price{font-size:1.8rem}.contact-form,.contact-panel{padding:22px}section{padding:58px 0}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="wrap"><span>✨ Friendly, reliable home cleaning</span><span>Call us: <strong>071 749 5225</strong></span></div></div>
+<header><div class="wrap nav">
+<a class="brand" href="#home" aria-label="Stanford Cleaning Services home"><span class="brandmark">✦</span><span><strong>STANFORD</strong><small>CLEANING SERVICES</small></span></a>
+<nav class="navlinks" aria-label="Main navigation"><a href="#services">Services</a><a href="#prices">Prices</a><a href="#gallery">Our Work</a><a href="#reviews">Reviews</a><a class="btn btn-primary" href="#contact">Get a Quote</a></nav>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+<div><span class="eyebrow">✦ CLEAN SPACES • HEALTHY LIVES</span><h1>A fresher home.<br><span>A brighter day.</span></h1><p>Come home to clean, comfortable spaces. Stanford Cleaning Services brings a professional touch, friendly service, and care to every clean.</p>
+<div class="hero-actions"><a class="btn btn-primary" href="#contact">Book a Cleaning <span>→</span></a><a class="btn btn-green" href="#prices">View Our Prices</a></div>
+<div class="trustline"><span>Reliable service</span><span>Flexible booking</span><span>Careful cleaning</span></div></div>
+<div class="hero-photo"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1100&q=85" alt="Bright, freshly cleaned home interior"><div class="floating-card"><strong>Make room to relax ✨</strong><span>We take care of the cleaning, so you can focus on what matters.</span></div></div>
+</div></section>
+<section class="services" id="services"><div class="wrap"><div class="section-head"><span class="eyebrow">WHAT WE DO</span><h2>Cleaning that fits your life</h2><p>From everyday home care to a bigger refresh, we help make your space feel welcoming again.</p></div>
+<div class="cards">
+<article class="service-card"><div class="service-icon">🏡</div><h3>House Cleaning</h3><p>Thoughtful cleaning for bedrooms, bathrooms, kitchens, and living areas.</p></article>
+<article class="service-card"><div class="service-icon">✨</div><h3>Deep Cleaning</h3><p>Extra attention for the spots that need a little more care and detail.</p></article>
+<article class="service-card"><div class="service-icon">🧽</div><h3>Custom Cleaning</h3><p>Have a specific task or space in mind? Tell us what you need and we’ll discuss it.</p></article>
+</div></div></section>
+<section id="prices"><div class="wrap"><div class="section-head"><span class="eyebrow">CLEAR, SIMPLE PRICING</span><h2>House cleaning prices</h2><p>Choose the size that best matches your home. Need something different? Send us an inquiry for a tailored quote.</p></div>
+<div class="pricing-grid">
+<article class="price-card"><h3>1 Bedroom</h3><div class="price">R280</div><p>Living area, kitchen, bathroom and 1 bedroom.</p></article>
+<article class="price-card"><h3>2 Bedrooms</h3><div class="price">R550</div><p>Living area, kitchen, bathroom(s) and 2 bedrooms.</p></article>
+<article class="price-card"><h3>3 Bedrooms</h3><div class="price">R850</div><p>Living area, kitchen, bathroom(s) and 3 bedrooms.</p></article>
+<article class="price-card"><h3>3 Bedrooms+</h3><div class="price">From R1 150</div><p>Larger homes and additional rooms, quoted to suit your needs.</p></article>
+</div><p class="price-note">Prices shown are starting prices and may vary with the size and condition of the property or extra requests.</p></div></section>
+<section class="gallery" id="gallery"><div class="wrap"><div class="section-head"><span class="eyebrow">A LOOK AT OUR WORK</span><h2>Our work gallery</h2><p>Every clean has a story. Browse the gallery, then add photos of your own recent jobs to show customers the difference.</p></div>
+<div class="gallery-tools"><label class="btn btn-primary upload-label" for="photoUpload">＋ Add recent job photos</label><input id="photoUpload" type="file" accept="image/*" multiple hidden></div>
+<div class="gallery-grid" id="galleryGrid">
+<article class="gallery-item"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" alt="Tidy living room"><div class="gallery-caption">Fresh, welcoming living spaces</div></article>
+<article class="gallery-item"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=80" alt="Clean modern home interior"><div class="gallery-caption">Details make the difference</div></article>
+<article class="gallery-item"><img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" alt="Clean and organised kitchen"><div class="gallery-caption">A kitchen ready to shine</div></article>
+</div><p class="price-note">Tip: photos selected here preview on this device only. To publish them permanently, add the image files to your website hosting and update the gallery as described in the README.</p>
+</div></section>
+<section class="testimonials" id="reviews"><div class="wrap"><div class="section-head"><span class="eyebrow">KIND WORDS MATTER</span><h2>Client references</h2><p>Trust grows through real experiences. Add feedback from customers who have agreed to share their comments.</p></div>
+<div class="review-grid">
+<article class="review"><div class="stars">★★★★★</div><blockquote>“Add a real customer comment about their cleaning experience here.”</blockquote><strong>Client name</strong><small>With permission to publish</small></article>
+<article class="review"><div class="stars">★★★★★</div><blockquote>“Share what the customer appreciated most, such as attention to detail or friendly service.”</blockquote><strong>Client name</strong><small>With permission to publish</small></article>
+<article class="review"><div class="stars">★★★★★</div><blockquote>“Use a genuine review that helps new customers understand what to expect.”</blockquote><strong>Client name</strong><small>With permission to publish</small></article>
+</div><p class="review-note">These are editable placeholders, not actual customer testimonials. Replace them with genuine approved references before publishing.</p></div></section>
+<section class="contact" id="contact"><div class="wrap"><div class="section-head"><span class="eyebrow">LET’S GET STARTED</span><h2>Tell us what you need</h2><p>Have a question or want to book a clean? Send an inquiry and we’ll be happy to hear from you.</p></div>
+<div class="contact-grid"><aside class="contact-panel"><h3>Contact Stanford</h3><p>We’re here to help you find the right cleaning service for your space.</p>
+<div class="contact-line"><span class="ico">📞</span><div><strong>Phone</strong><br><a href="tel:+27717495225">071 749 5225</a></div></div>
+<div class="contact-line"><span class="ico">✉️</span><div><strong>Email</strong><br><a href="mailto:stanfordcleaningservices@protonmail.com">stanfordcleaningservices@protonmail.com</a></div></div>
+<div class="contact-line"><span class="ico">📍</span><div><strong>Service area</strong><br>Johannesburg, South Africa</div></div>
+</aside>
+<form class="contact-form" action="https://formsubmit.co/stanfordcleaningservices@protonmail.com" method="POST">
+<h3>Send an inquiry</h3><p>Complete the details below and tell us the reason for your inquiry.</p>
+<input type="hidden" name="_subject" value="New inquiry — Stanford Cleaning Services">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="true">
+<div class="field"><label for="name">Enter name</label><input id="name" name="name" type="text" placeholder="Your full name" autocomplete="name" required></div>
+<div class="field"><label for="email">Enter email</label><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required></div>
+<div class="field"><label for="reason">Reason for inquiry</label><select id="reason" name="reason" required><option value="" disabled selected>Select a reason</option><option>Book a house cleaning</option><option>Request a price quote</option><option>Ask about cleaning services</option><option>Business or other inquiry</option></select></div>
+<div class="field"><label for="message">More details (optional)</label><textarea id="message" name="message" placeholder="Tell us about the property, preferred date, or what you need cleaned."></textarea></div>
+<button class="btn btn-primary" type="submit">Send Inquiry →</button>
+<p class="form-help">Email delivery is handled by FormSubmit, a third-party service. On the first submission, the mailbox owner may need to confirm activation from the email they receive.</p>
+</form></div></div></section>
+</main>
+<footer><div class="wrap footer-inner"><div><strong>STANFORD CLEANING SERVICES</strong><br><small>Clean spaces • Healthy lives</small></div><div class="footer-links"><a href="#services">Services</a><a href="#prices">Prices</a><a href="#gallery">Our Work</a><a href="#contact">Contact</a></div><small>© <span id="year"></span> Stanford Cleaning Services</small></div></footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('photoUpload').addEventListener('change', function(event) {
+  const grid = document.getElementById('galleryGrid');
+  [...event.target.files].forEach(file => {
+    if (!file.type.startsWith('image/')) return;
+    const url = URL.createObjectURL(file);
+    const card = document.createElement('article');
+    card.className = 'gallery-item user-added';
+    const img = document.createElement('img'); img.src = url; img.alt = 'Recently completed cleaning job';
+    const caption = document.createElement('div'); caption.className = 'gallery-caption'; caption.textContent = file.name.replace(/\.[^/.]+$/, '');
+    card.append(img, caption); grid.prepend(card);
+  });
+});
+</script>
+</body></html>
